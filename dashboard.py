@@ -2,11 +2,14 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+from PIL import Image
+
+im = Image.open("favicon.ico")
 
 # ---- Page Configuration ----
 st.set_page_config(
     page_title="India's Gender Gap Dashboard",
-    page_icon="🇮🇳",
+    page_icon=im,
     layout="wide"
 )
 
