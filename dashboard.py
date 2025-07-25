@@ -5,7 +5,7 @@ import plotly.express as px
 
 # ---- Page Configuration ----
 st.set_page_config(
-    page_title="India Gender Gap Dashboard",
+    page_title="India's Gender Gap Dashboard",
     page_icon="🇮🇳",
     layout="wide"
 )
