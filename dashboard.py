@@ -70,7 +70,7 @@ all_states = sorted(df["State"].unique())
 # --- UI Layout ---
 st.title("🇮🇳 India Gender Gap Index Dashboard")
 
-tab1, tab2 = st.tabs(["📊 Dashboard", "📖 Methodology"])
+tab1, tab2, tab3 = st.tabs(["📊 Dashboard", "📖 Methodology", "👥 Contributors"])
 
 # --- DASHBOARD TAB ---
 with tab1:
@@ -253,3 +253,22 @@ with tab2:
     weights_data = {'Subindex': ['Economic Participation and Opportunity', '', '', '', '', 'Educational Attainment', '', '', '', 'Health and Survival', '', 'Political Empowerment', '', ''], 'Indicator': ['Labour-force participation rate', 'Wage equality for similar work (survey)', 'Estimated earned income', 'Legislators, senior officials and managers', 'Professional and technical workers', 'Literacy rate', 'Enrolment in primary education', 'Enrolment in secondary education', 'Enrolment in tertiary education', 'Sex ratio at birth', 'Healthy life expectancy', 'Women in parliament', 'Women in ministerial positions', 'Years with a female head of state (last 50 years)'], 'Weight': [0.199, 0.310, 0.221, 0.149, 0.121, 0.191, 0.459, 0.230, 0.121, 0.693, 0.307, 0.310, 0.247, 0.443]}
     weights_df = pd.DataFrame(weights_data)
     st.table(weights_df)
+
+# --- CONTRIBUTORS TAB (SIMPLIFIED) ---
+with tab3:
+    st.header("Contributors")
+    st.markdown("This dashboard reflects the voluntary contributions of individuals across research, data, and technical domains.")
+    st.markdown("---")
+
+    st.subheader("Conceptualization, Data Processing, and Code Development")
+    st.markdown("- [Rahul Singh](https://www.linkedin.com/in/rahulsingh35/)")
+
+    st.subheader("Data Validation, Documentation, and Research Support")
+    st.markdown("- [Aanya Singhal](https://www.linkedin.com/in/aanyasinghal-991615187/)")
+
+    st.subheader("Technical Troubleshooting and Deployment")
+    st.markdown("""
+    - [Varun C.](https://www.linkedin.com/in/varun-c-079056119/)
+    - [Abhishek](https://www.linkedin.com/in/abhishekmishraam/)
+    - [Ansh Sharma](https://www.linkedin.com/in/connectansh/)
+    """)
