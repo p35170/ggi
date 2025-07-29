@@ -265,6 +265,9 @@ with tab3:
 
     st.subheader("Data Validation, Documentation, and Research Support")
     st.markdown("- [Aanya Singhal](https://www.linkedin.com/in/aanyasinghal-991615187/)")
+    
+    st.subheader("Mentoring, facilitation, and resource access")
+    st.markdown("- [Chand Kaushil](https://www.linkedin.com/in/chand-kaushil-25999a9/)")
 
     st.subheader("Technical Troubleshooting and Deployment")
     st.markdown("""
